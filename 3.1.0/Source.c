@@ -79,6 +79,14 @@ void print100_10_while() {
 	}
 }
 
+void print1000_100_while() {
+	int a = 1000;
+	while (a >= 100) {
+		printf("%d ", a);
+		a -= 100;
+	}
+}
+
 
 void main() {
 	SetConsoleCP(1251);
@@ -93,6 +101,7 @@ void main() {
 		printf("2: Задача 2 (Таблица Пифагора)\n");
 		printf("3: Задача 3 (Рисунок по варианту)\n");
 		printf("11: Вывести числа от 100 до 10 с шагом 10\n");
+		printf("12: Вывести числа от 1000 до 100 с шагом 100\n");
 		printf("\n");
 		printf("0: Выйти из программы\n");
 
@@ -110,6 +119,9 @@ void main() {
 			break;
 		case 11:
 			print100_10_while();
+			break;
+		case 12:
+			print1000_100_while();
 			break;
 		}
 	} while (n != 0);
